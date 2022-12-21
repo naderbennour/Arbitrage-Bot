@@ -1,16 +1,17 @@
-## Submission file
- is /src/bot.py
+## Introduction
+This bot was created for a hackathon competition where it competed against other team's bots in a simulated trading environment. The stocks and ETFs used in the competition were fictional, with no real fundamentals to base trades on. The market consisted of 4 stocks and 2 ETFs, and the bot aimed to stay market neutral to avoid taking directional positions.
+
+To maximize profits, the bot used a hybrid strategy combining arbitrage and market making. The arbitrage strategy involved identifying opportunities to long ETFs and short stocks (or vice versa) in equal sizes to take advantage of price discrepancies. The market making strategy involved adding more competitive bids and asks to the order book for a particular asset, with the goal of increasing liquidity and capturing the spread.
+
+In addition to these strategies, the bot also implemented a risk management strategy to ensure it was not overexposed to any one asset or market.
+
+Note: Some of the functions in the code that were originally connected to the event's API have been removed and had their names changed to protect the integrity of the competition in case it is repeated in the future.
 
 ## Team
 * [Tomás Barbosa](https://github.com/barbosa7)
 * [Nader Bennour](https://github.com/naderbennour)
 * [Vicente Almeida](https://github.com/almeidavc)
 
-## Inspiration
-We had a lot of fun when we were ranked number 1 in the challenge and testing phase. Our goal is to repeat our success in the official testing period and defend our title.
-
-## What it does
-Our algorithm is a market-making algorithm that trades the green energy basket and the fossil fuel basket. It continuously quotes 2-sides in the basket's order book, and hedges our trades in the two stocks.
 
 ## How we built it
 Our algorithm is written in Python and is based on the idea of market-making.
